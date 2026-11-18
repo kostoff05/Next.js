@@ -1,6 +1,5 @@
-
-
 "use client";
+import GeminiAssistant from "./GeminiAssistant";
 
 // useState - съхранява данни, които могат да се променят в компонента
 // useEffect - изпълнява допълнителна логика при зареждане или промяна на данни
@@ -913,11 +912,16 @@ export default function DashboardPage() {
                                 >
                                     Отказ
                                 </button>
+
                             </div>
                         </form>
                     </section>
                 )}
             </div>
+            {/* AI асистент за предложения на напитки */}
+            <GeminiAssistant />
+
+
         </main>
     );
 }
